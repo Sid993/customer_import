@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Test.
+ *
+ * @category  Test
+ * @package   Test_CustomerImport
+ * @author    Saurav Kumar
+ * @copyright Test
+ * @license   https://example.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="admin">
+		<route id="customerimport" frontName="customerimport">
+			<module name="Test_CustomerImport"/>
+		</route>
+	</router>
+</config>

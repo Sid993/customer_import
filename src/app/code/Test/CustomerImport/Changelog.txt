@@ -1,0 +1,8 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.0 --------------------------------------
+    + Compatible with Magento 2.4.*
+    + Customer can be imported by using CSV and JSON files using command.

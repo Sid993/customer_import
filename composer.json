@@ -1,0 +1,21 @@
+{
+    "name": "test/module-customerimport",
+    "description": "Customer Import through CSV and JSON",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Saurav Kumar"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "src/app/code/Test/CustomerImport/registration.php"
+        ],
+        "psr-4": {
+            "Test\\CustomerImport\\": "src/app/code/Test/CustomerImport"
+        }
+    }
+}

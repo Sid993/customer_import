@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Test.
+ *
+ * @category  Test
+ * @package   Test_CustomerImport
+ * @author    Saurav Kumar
+ * @copyright Test
+ * @license   https://example.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Test\CustomerImport\Console\Command\ImportCustomer">
+        <arguments>
+            <argument name="profileTypes" xsi:type="array">
+                <item name="profile_type" xsi:type="array">
+                    <item name="csv" xsi:type="object">Test\CustomerImport\Model\ImportCsv</item>
+                    <item name="json" xsi:type="object">Test\CustomerImport\Model\ImportJson</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!--Creating Custom Import Command-->
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="import_customer"
+                    xsi:type="object">Test\CustomerImport\Console\Command\ImportCustomer</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
